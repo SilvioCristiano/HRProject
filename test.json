@@ -1,0 +1,89 @@
+{
+	"WebservicePublishingRequest":	{
+		"Request": {
+			"Date": "21-12-2021",
+			"Activity": {
+				"Number": "[PR/SE]99999",
+				"Name": "activeContractCustomers"
+			},
+			"Type": "NewWebservice",
+			"EnvironmentsToApply": {
+				"Integration": {
+					"Apply": "True",
+					"Date": "21-12-2021"
+				},
+				"Quality": {
+					"Apply": "False",
+					"Date": "21-12-2021"
+				},
+				"Production": {
+					"Apply": "False",
+					"Date": "21-12-2021"
+				}
+			}
+		},
+		
+		"WebserviceID": {
+			"WSDL_ID": 9999,
+			"ServiceName": "net_bcp_ia_webservices_accounts_exports_ActiveContractCustomers_WS_Export_IActiveContractCustomersHttpService",
+			"TargetNamespace": "urn:bcp.net/ia/webservices/accounts/activeContractCustomers",
+			"Version": "9.9.9",
+			"Purpose": "Webservice Purpose Description",
+			"BusinessDomain": "Customers",
+			"SolutionProvider": "ARD Application Name (shortname)",
+			"DevelopmentOwner": {
+				"ITunit": "IT Unit Name",
+				"Team": "Team Name",
+				"Name": "Requester Name",
+				"Contact": "Requester's Email Address"
+			}
+		},
+		
+		"PublishNewWebservice": {
+			"WSDLfilename": "activeContractCustomers.wsdl",
+			"IntegrationEndpoint": "Integration Endpoint",
+			"QualityEndpoint": "Quality Endpoint",
+			"ProductionEndpoint": "Production Endpoint",
+			"Operations": [
+				{
+					"Name": "getList",
+					"Purpose": "Operation Purpose Description"
+				}
+			]
+		},
+		
+		"PublishNewOperations": {
+			"WSDLfilename": "WSDL filename + '.wsdl' extension",
+			"Operations": [
+				{
+					"Name": "getList",
+					"Purpose": "Operation Purpose Description"
+				}
+			]
+		},
+		
+		"UpdateWSDL": {
+			"WSDLfilename": "WSDL filename + '.wsdl' extension"
+		},
+		
+		"ReplaceWebserviceEndpoint": {
+			"IntegrationEndpoint": "New Integration Endpoint",
+			"QualityEndpoint": "New Quality Endpoint",
+			"ProductionEndpoint": "New Production Endpoint"
+		},
+		
+		
+		"DeprecateWebservice": {
+			"WSDLfilename": "WSDL filename + '.wsdl' extension"
+		},
+		
+		"DeprecateOperations": {
+			"WSDLfilename": "WSDL filename + '.wsdl' extension",
+			"Operations": [
+				{
+					"Name": "Operation Name"
+				}
+			]
+		}
+	}
+}
